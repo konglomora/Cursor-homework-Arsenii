@@ -1,4 +1,15 @@
 body {
     background-color: black;
     color: white;
+    padding: 15px;
+    
+}
+
+body li {
+    line-height: 1.5;
+}
+
+body img {
+    width: 100%;
+
 }
