@@ -9,7 +9,6 @@ body {
   margin-right: 15%;
   margin-left: 15%;
   min-width: auto;
- 
 }
 
 h1 {
@@ -39,6 +38,7 @@ h1 {
 .table_dark th {
   border-bottom: 4px solid #0075FF;
   padding: 5px 17px;
+  color:black;
 }
 
 .table_dark td {
