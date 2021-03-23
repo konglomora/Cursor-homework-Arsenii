@@ -7,102 +7,122 @@
     <link rel="stylesheet" href="style.css" />
     <title>02_HW_HTML</title>
   </head>
+
   <body>
-    <table class="table_dark">
-      <tr>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Number</th>
-        <th>Email</th>
-      </tr>
-      <tr>
-        <td>Anatolii</td>
-        <td>Ducalis</td>
-        <td>+380669683051</td>
-        <td>anatolii.ducalis@mail.ru</td>
-      </tr>
-      <tr>
-        <td>Albus</td>
-        <td>Dumbledore</td>
-        <td>+380663015862</td>
-        <td>albus.dumbledore@hogwarts.edu</td>
-      </tr>
-      <tr>
-        <td>Forrest</td>
-        <td>Gump</td>
-        <td>+380669620575</td>
-        <td>forrest.gump@gmail.com</td>
-      </tr>
-      <tr>
-        <td>Steve</td>
-        <td>Wozniak</td>
-        <td>+380666507849</td>
-        <td>steve.wozniak@apple.com</td>
-      </tr>
-    </table>
-
-    <form class="dark_form">
-      <p>Enter your first and last name</p>
-      <p>
-        <input class="inputNames" name="fistName" placeholder="Fist name" />
-      </p>
-      <p>
-        <input class="inputNames" name="surName" placeholder="Last name" />
-      </p>
-
-      <div class="genderChoice">
-        <p>
-          <strong>Choose your gender</strong>
-        </p>
-        <input type="radio" id="male" name="gender" value="male" checked />
-        <label for="male">Male</label><br />
-        <input type="radio" id="female" name="gender" value="female" />
-        <label for="female">Female</label>
+    <div class="main">
+      <h1>HTML. Tables & forms</h1>
+      <div class="tableClass">
+        <table class="table_dark">
+          <tr>
+            <th>Name</th>
+            <th>Surname</th>
+            <th>Number</th>
+            <th>Email</th>
+          </tr>
+          <tr>
+            <td>Anatolii</td>
+            <td>Ducalis</td>
+            <td>+380669683051</td>
+            <td>anatolii.ducalis@mail.ru</td>
+          </tr>
+          <tr>
+            <td>Albus</td>
+            <td>Dumbledore</td>
+            <td>+380663015862</td>
+            <td>albus.dumbledore@hogwarts.edu</td>
+          </tr>
+          <tr>
+            <td>Forrest</td>
+            <td>Gump</td>
+            <td>+380669620575</td>
+            <td>forrest.gump@gmail.com</td>
+          </tr>
+          <tr>
+            <td>Steve</td>
+            <td>Wozniak</td>
+            <td>+380666507849</td>
+            <td>steve.wozniak@apple.com</td>
+          </tr>
+        </table>
       </div>
+      
+      <div class="container"  >
+        <div class="enter" >
+          <form class="dark_form">
+            <p><strong>Enter your first and last name:</strong></p>
+            <p>
+              <input class="inputNames" name="fistName" placeholder="Fist name" />
+            </p>
+            <p>
+              <input class="inputNames" name="surName" placeholder="Last name" />
+            </p>
+        </div>
+  
+          <div class="genderChoice">
+            <p>
+              <strong>Choose your gender:</strong>
+            </p>
+              <input type="radio" id="male" name="gender" value="male" checked />
+              <label for="male">Male</label><br />
+              <input type="radio" id="female" name="gender" value="female" />
+              <label for="female">Female</label>
+          </div>
+          </div>
 
-      <textarea
-        name="question"
-        rows="5"
-        cols="22"
-        placeholder="Write your question"
-      ></textarea>
+        <div class="wrap">
+          <div class="question">
+            <p><strong>What are you interested in?</strong></p>
+            <textarea id="textarea"
+              name="question"
+              rows="5"
+              cols="22"
+              placeholder="Write your question"
+            ></textarea>
+          </div>
+          
+  
+          <div class="languages">
+            <p><strong>What languages do you know?</strong></p>
+            <input
+              type="checkbox"
+              id="language-1"
+              name="language-1"
+              value="Ukranian"
+            />
+            <label for="language-1">Ukranian</label><br />
+            <input
+              type="checkbox"
+              id="language-2"
+              name="language-2"
+              value="Russian"
+            />
+            <label for="language-2">Russian</label><br />
+            <input
+              type="checkbox"
+              id="language-3"
+              name="language-3"
+              value="English"
+            />
+            <label for="language-3">English</label><br />
+          </div>
+          <div class="city_select">
+            <p><strong>Where are you from?</strong></p>
+            <select id="cities" name="cities">
+              <option value disabled selected>Select city</option>
+              <option value="kyiv">Kyiv</option>
+              <option value="lviv">Lviv</option>
+              <option value="dnipro">Dnipro</option>
+              <option value="kharkiv">Kharkiv</option>
+              <option value="odessa">Odessa</option>
+            </select>
+          </div>
+        </div>
 
-      <div>
-        <select id="cities" name="cities">
-          <option id="select" value="select" selected>Select city</option>
-          <option value="kyiv">Kyiv</option>
-          <option value="lviv">Lviv</option>
-          <option value="dnipro">Dnipro</option>
-          <option value="kharkiv">Kharkiv</option>
-          <option value="odessa">Odessa</option>
-        </select>
-      </div>
+        <div class="submit"><input type="submit" value="Submit" /></div>
 
-      <div class="languages">
-        <input
-          type="checkbox"
-          id="language-1"
-          name="language-1"
-          value="Ukranian"
-        />
-        <label for="language-1">Ukranian</label><br />
-        <input
-          type="checkbox"
-          id="language-2"
-          name="language-2"
-          value="Russian"
-        />
-        <label for="language-2">Russian</label><br />
-        <input
-          type="checkbox"
-          id="language-3"
-          name="language-3"
-          value="English"
-        />
-        <label for="language-3">English</label><br />
-      </div>
-
-      <input type="submit" value="Submit" />
-    </form>
+      </form>
+    </div>
   </body>
 </html>
+
+
