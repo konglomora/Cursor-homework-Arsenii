@@ -1,33 +1,48 @@
 body {
-    background: black;
+  background: black;
+  color: white;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 }
 .table_dark {
-    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
-    font-size: 14px;
-    width: 640px;
-    text-align: left;
-    border-collapse: collapse;
-    margin: 35px 0 0 30%;
-    color:white;
-    
-    
+  font-size: 14px;
+  width: 640px;
+  text-align: left;
+  border-collapse: collapse;
+  margin: 50px 0 0 30%;
+  color: white;
 }
 
 .table_dark th {
-    border-bottom: 1px solid #37B5A5;
-    padding: 12px 17px;
-  }
+  border-bottom: 1px solid #37b5a5;
+  padding: 12px 17px;
+}
 
-  .table_dark td {
-    color: #CAD4D6;
-    border-bottom: 1px solid #37B5A5;
-    border-right:1px solid #37B5A5;
-    padding: 7px 17px;
-  }
+.table_dark td {
+  color: #cad4d6;
+  border-bottom: 1px solid #37b5a5;
+  border-right: 1px solid #37b5a5;
+  padding: 7px 17px;
+}
 
-  .table_dark tr:last-child td {
-    border-bottom: none;
-  }
-  .table_dark td:last-child {
-    border-right: none;
-  }
+.table_dark tr:last-child td {
+  border-bottom: none;
+}
+.table_dark td:last-child {
+  border-right: none;
+}
+
+.dark_form {
+  margin: 60px 0 0 45%;
+}
+
+.inputNames {
+  width: 25%;
+}
+
+.genderChoice {
+  margin: 40px 0 0;
+}
+
+.dark_form #select {
+  display: none;
+}
