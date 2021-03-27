@@ -9,7 +9,7 @@ body {
   margin-right: auto;
   margin-left: auto;
   margin-top: 1.5em;
-  border: 1px solid gray;
+  border: 1px solid #777777;
   border-radius: 5px;
   width: 50em;
   background: #2f2f2f;
@@ -23,15 +23,94 @@ table {
 }
 
 td {
-  border-top: 1px solid gray;
+  border-top: 1px solid #777777;
 }
 
 td:nth-child(2n) {
-  color: gray;
+  color: #777777;
+}
+
+th,
+td {
+  padding: 5px;
+  text-align: left;
+  color: whitesmoke;
+  height: 30px;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid whitesmoke;
+  display: inline;
+  margin-left: 6px;
+  position: relative;
+  top: 12px;
+}
+
+.td__archive_icon {
+  width: 15px;
 }
 
 .dots::before {
   content: "•••";
-  font-size: 12px;
   letter-spacing: 2px;
+  font-size: 16px;
+  padding-right: 15px;
+   text-align: right;
+}
+
+td.dots {
+  text-align: right;
+}
+
+.second-table.dots{
+  width: 110px;
+}
+.search {
+  background: #777777;
+  border: 1px solid #777777;
+  border-radius: 7px;
+  width: 58%;
+  height: 30px;
+  float: right;
+}
+
+#search__lable_icon {
+  width: 15px;
+  margin: 7px;
+}
+
+input[type="text"] {
+  color: white;
+  background-color: #777777;
+  border: none;
+  outline: none;
+  position: relative;
+  height: 20px;
+  top: -9px;
+  width: 75%;
+}
+
+::placeholder {
+  color: white;
+  opacity: 50%;
+}
+
+.first-table_name,
+.first-table_name_td {
+  padding-left: 9px;
+  width: 291px;
+}
+
+.third-table_name {
+  padding-left: 9px;
+  width: 300px;
+}
+
+.third-table_name_td {
+  padding-left: 9px;
+  word-spacing: 3px;
 }
