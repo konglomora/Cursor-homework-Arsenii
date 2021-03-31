@@ -190,8 +190,6 @@ body {
 select {
     background: url(/img/arrow.svg) no-repeat right #ffffff;
     -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
     background-position-x: 95%;
 
 }
