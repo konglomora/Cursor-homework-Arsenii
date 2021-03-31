@@ -89,6 +89,7 @@ body {
     height: 500px;
     left: 0px;
     top: 500px;
+    margin-bottom: 45px;
 }
 
 .container_middle__heading {
@@ -184,6 +185,15 @@ body {
     border: 1px solid #333333;
     box-sizing: border-box;
     border-radius: 6px;
+}
+
+select {
+    background: url(/img/arrow.svg) no-repeat right #ffffff;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-position-x: 95%;
+
 }
 
 .submit {
