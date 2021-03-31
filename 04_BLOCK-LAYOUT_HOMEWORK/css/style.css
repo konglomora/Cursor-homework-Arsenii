@@ -204,7 +204,6 @@ body {
     font-weight: normal;
     font-size: 14px;
     line-height: 17px;
-    /* identical to box height */
 
     text-transform: uppercase;
 }
@@ -215,5 +214,207 @@ body {
     height: 435px;
     left: 0px;
     top: 1045px;
-    padding: 17px 34px 16px 34px;
+}
+
+.container_bottom__address-block {
+    position: absolute;
+    width: 259px;
+    height: 264px;
+    left: 161px;
+    top: 85px;
+}
+
+.container_bottom__address-block__heading {
+    position: absolute;
+    left: 5px;
+    width: 65px;
+    height: 22px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #101010;
+}
+
+.container_bottom__address-block__title {
+    position: absolute;
+    width: 254px;
+    height: 54px;
+    left: 5px;
+    top: 55px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+
+    color: #101010;
+}
+
+.container_bottom__address-block__footer {
+    position: absolute;
+    width: 155px;
+    height: 14px;
+    top: 250px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #101010;
+}
+
+.container_bottom__services-block {
+    position: absolute;
+    width: 254px;
+    height: 164px;
+    left: 450px;
+    top: 85px;
+}
+
+.container_bottom__services-block__heading {
+    position: absolute;
+    width: 67px;
+    height: 22px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #101010;
+}
+
+.container_bottom__services-block__title {
+    position: absolute;
+    width: 254px;
+    height: 114px;
+    top: 50px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 160%;
+
+    text-transform: capitalize;
+
+    color: #000000;
+
+    cursor: pointer;
+}
+
+.container_bottom__get-in-touch-block {
+    position: absolute;
+    width: 122px;
+    height: 128px;
+    left: 734px;
+    top: 85px;
+}
+
+.container_bottom__get-in-touch-block__heading {
+    width: 101px;
+    height: 22px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    text-align: center;
+
+    color: #101010;
+}
+
+.container_bottom__get-in-touch-block__email {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 55px;
+    bottom: 59px;
+
+    width: 122px;
+    height: 14px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #101010;
+
+    cursor: pointer;
+}
+
+.container_bottom__get-in-touch-block__number {
+    position: absolute;
+    top: 80px;
+    bottom: 34px;
+    right: 26px;
+    width: 96px;
+    height: 14px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+
+    color: #121212;
+}
+
+.get-in-touch-block__facebook-logo {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 734px;
+    top: 199px;
+}
+
+.get-in-touch-block__linkedin-logo {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 760px;
+    top: 199px;
+}
+
+.get-in-touch-block__twitter-logo {
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    left: 786px;
+    top: 199px;
+}
+
+.container_bottom__payment-secure__heading {
+    position: absolute;
+    width: 96px;
+    height: 22px;
+    left: 1022px;
+    top: 85px;
+
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: #101010;
+}
+
+.payment-secure__image {
+    position: absolute;
+    width: 216px;
+    height: 31px;
+    left: 1028px;
+    top: 140px;
 }
