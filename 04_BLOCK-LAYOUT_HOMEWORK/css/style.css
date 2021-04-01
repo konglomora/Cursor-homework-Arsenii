@@ -188,10 +188,9 @@ body {
 }
 
 select {
-    background: url(/img/arrow.svg) no-repeat right #ffffff;
+    background: url(../img/arrow.svg) no-repeat right #ffffff;
     -webkit-appearance: none;
     background-position-x: 95%;
-
 }
 
 .submit {
