@@ -439,7 +439,7 @@ footer {
     height: 851px;
     margin-top: 3648px;
     position: absolute;
-    background: orange
+    background: orange;
 }
 
 .footer__top-separator {
@@ -450,40 +450,60 @@ footer {
 
 .footer__wrapper {
     display: flex;
+    flex-direction: column;
     background: pink;
     width: 1118px;
     height: 654px;
     margin: 100px auto 0 auto;
 }
 
+.footer_sentence-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
+.footer__middle__links {
+    display: flex;
+    margin-top: 153px;
+}
 
+.footer__middle__links__contact {
+    display: flex;
+    flex-direction: column;
+}
 
+.footer__middle__links__about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 253px;
+    width: 166px;
+    height: 220px;
+}
 
+.footer__middle__links__help {
+    display: flex;
+    flex-direction: column;
+    width: 166px;
+    height: 250px;
+}
 
+.footer__middle__links_socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 178px;
+    height: 110px;
+}
 
+.footer__middle__links__title-item {
+    display: flex;
+    flex-direction: column;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.footer__bottom__content {
+    display: flex;
+    flex-direction: row;
+    margin-top: auto;
+    justify-content: space-between;
+    align-items: flex-end;
+}
