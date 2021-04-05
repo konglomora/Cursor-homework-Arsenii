@@ -1,8 +1,7 @@
 .wrapper {
     display: flex;
-
-    /* background-color: aqua; */
     justify-content: center;
+    margin: 0 auto;
 }
 
 .header {
