@@ -37,11 +37,16 @@
 .header__nav-bar__item {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 160%;
     color: #212353;
     text-decoration: none;
+}
+
+.header__nav-bar__items > .header__nav-bar__item:first-child {
+    font-weight: 800;
+
 }
 .header-req-demo-link {
     margin-left: auto;
@@ -494,7 +499,7 @@ footer {
     border-radius: 50px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 18px;
     line-height: 160%;
     display: flex;
@@ -518,7 +523,7 @@ footer {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 600;
     font-size: 16px;
     line-height: 160%;
     letter-spacing: 0.005em;
@@ -552,10 +557,11 @@ footer {
 .footer__middle__links__contact-heading-text {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 600;
     font-size: 20px;
     line-height: 160%;
     color: #212353;
+    margin-left: 20px;
 }
 
 .contact-item__address {
@@ -595,7 +601,7 @@ footer {
 .footer__middle__links__heading {
     font-family: 'Poppins', sans-serif;
     font-style: normal;
-    font-weight: 900;
+    font-weight: 600;
     font-size: 16px;
     line-height: 160%;
     color: #212353;
