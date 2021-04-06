@@ -18,21 +18,9 @@
     background-color: blue;
 }
 
-.container > div:nth-child(4n -1) {
+.container > div:nth-child(4n-1) {
     background-color: red;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .button-container {
     display: flex;
