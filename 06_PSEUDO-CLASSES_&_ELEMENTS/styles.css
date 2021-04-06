@@ -14,17 +14,25 @@
     height: 50px;
     background-color: gray;
 }
-.container > div:nth-last-child(n) {
+.container > div:nth-last-child(-n+4) {
     background-color: blue;
-}
-
-.container > div:nth-last-child(n + 5) {
-    background-color: gray;
 }
 
 .container > div:nth-child(4n -1) {
     background-color: red;
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .button-container {
     display: flex;
