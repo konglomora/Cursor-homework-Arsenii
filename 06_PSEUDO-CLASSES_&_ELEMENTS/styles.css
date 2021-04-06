@@ -1,0 +1,69 @@
+.container {
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    gap: 5px;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 240px;
+    height: auto;
+}
+
+.container div {
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+.container > div:nth-last-child(n) {
+    background-color: blue;
+}
+
+.container > div:nth-last-child(n + 5) {
+    background-color: gray;
+}
+
+.container > div:nth-child(4n -1) {
+    background-color: red;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 100%;
+    height: 120px;
+}
+
+.button-container > button {
+    margin: 0 46px 0 46px;
+    width: 501px;
+    height: 92px;
+    background: #44d3a8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 100px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    color: #ffffff;   
+    border: none;
+}
+
+.button-container::before {
+    content: '';
+    width: 200px;
+    height: 8px;
+    border-top: 2px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+}
+
+.button-container::after {
+    content: '';
+    width: 200px;
+    height: 8px;
+    border-top: 2px solid #c4c4c4;
+    border-bottom: 2px solid #c4c4c4;
+}
