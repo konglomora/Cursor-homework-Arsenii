@@ -14,7 +14,7 @@
     height: 50px;
     background-color: gray;
 }
-.container > div:nth-last-child(-n+4) {
+.container > div:nth-last-child(-n + 4) {
     background-color: blue;
 }
 
@@ -44,8 +44,16 @@
     font-weight: bold;
     font-size: 24px;
     line-height: 28px;
-    color: #ffffff;   
+    color: #ffffff;
     border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.button-container > button:hover {
+    color: #44d3a8;
+    border: 8px solid #44d3a8;
+    background: #ffffff;
 }
 
 .button-container::before {

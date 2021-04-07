@@ -69,6 +69,7 @@
     letter-spacing: 0.005em;
     color: #212353;
     transition: 0.3s ease-in-out;
+    outline: none;
 }
 
 .req-demo-btn:hover, .footer_sentence__buttons__btn-2:hover {
@@ -143,6 +144,7 @@
     color: #ffffff;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+    outline: none;
 }
 
 .top-content__btn:hover {
