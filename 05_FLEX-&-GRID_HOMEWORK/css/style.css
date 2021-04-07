@@ -45,7 +45,6 @@
 
 .header__nav-bar__items > .header__nav-bar__item:first-child {
     font-weight: 800;
-
 }
 .header-req-demo-link {
     margin-left: auto;
@@ -70,6 +69,11 @@
     letter-spacing: 0.005em;
     color: #212353;
     transition: 0.3s ease-in-out;
+}
+
+.req-demo-btn:hover, .footer_sentence__buttons__btn-2:hover {
+    background: #88c322;
+    color: #ffffff;
 }
 
 .req-demo-btn-arrow {
@@ -139,6 +143,12 @@
     color: #ffffff;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.top-content__btn:hover {
+    background: #ffffff;
+    color: #9c69e2;
+    box-shadow: 0px 5px 5px rgb(75 93 104 / 10%);
 }
 
 .middle-content__card {
@@ -504,6 +514,12 @@ footer {
     color: #ffffff;
     transition: 0.3s ease-in-out;
     cursor: pointer;
+}
+
+.footer_sentence__buttons__btn-1:hover {
+    color: #f063b8;
+    background: #ffffff;
+    box-shadow: 0px 5px 5px rgba(75, 93, 104, 0.1);
 }
 
 .footer_sentence__buttons__btn-2 {
