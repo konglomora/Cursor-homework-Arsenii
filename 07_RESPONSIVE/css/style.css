@@ -356,6 +356,7 @@ aside {
     margin-right: 1.125em;
     width: 30.63px;
     height: 36px;
+    cursor: pointer;
 }
 .user-info__avatar {
     margin-right: 0.6em;
@@ -459,7 +460,7 @@ aside {
 .subscription__text {
     display: flex;
     width: 43%;
-    height: 77%;
+    min-height: 77%;
     flex-direction: column;
     margin-left: 24px;
     margin-top: 24px;
@@ -482,7 +483,6 @@ aside {
     font-size: 16px;
     line-height: 24px;
     color: #000000;
-    
 }
 
 .button {
@@ -520,6 +520,39 @@ aside {
     color: #ffffff;
     outline: none;
     width: 53%;
-    margin-top: 8%;
+    margin-top: auto;
     margin-bottom: 10px;
 }
+
+button {
+    outline: none;
+    border: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #a259ff;
+    border: 5px solid #fff;
+}
+
+.header__navbar-select:hover {
+    background-color: #a259ff;
+    color: #ffffff;
+    transition: 0.3s ease-in-out;
+}
+
+.nav__item-icon:hover {
+    fill: #a259ff;
+    stroke: #a259ff;
+}
+
+#home-icon_path:hover {
+    fill: #a259ff;
+    transition: 0.3s ease-in-out;
+}
+
+.user-info__arrow {
+    cursor: pointer;
+}
+
