@@ -201,7 +201,14 @@ aside {
 }
 
 .card-course-text__rating {
-    margin-right: 5%;
+  
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 5px;
+    margin-right: 7%;
 }
 
 .card-course-progress {
@@ -555,4 +562,3 @@ button:hover {
 .user-info__arrow {
     cursor: pointer;
 }
-
