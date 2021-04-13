@@ -1,53 +1,525 @@
 body {
-    min-width: 1100px;
+    min-width: 1200px;
     min-height: 600px;
 }
 
 .wrapper {
     display: flex;
-    min-width: 1340px;
-    min-height: 890px;
+    min-width: 93%;
+    min-height: 98%;
     margin: 24px 66.71px 0px 32.24px;
-    background-color: burlywood;
 }
 
-nav {
+aside {
     background-color: #000;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
-    width: 132px;
+    min-width: 9%;
     height: 852px;
     border-radius: 24px;
+    box-shadow: 15px 15px 19px 11px rgba(10, 16, 21, 0.23);
 }
 
-.nav__item {
-    background-color: #fff;
-    width: 30px;
-    height: 30px;
-}
-
-nav .major {
-    background-color: #fff;
+.major__nav-item {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 102px;
+    color: #ffffff;
+    position: relative;
     width: 47px;
     height: 102px;
+    margin-top: 15.65px;
+    text-decoration: none;
+}
+.nav__item {
+    text-decoration: none;
+}
+.nav__item > svg {
+    text-decoration: none;
+    max-width: 30px;
+    max-height: 30px;
 }
 
+.nav__item:nth-child(2),
+.nav__item:nth-child(3),
+.nav__item:nth-child(4),
+.nav__item:nth-child(5),
+.nav__item:nth-child(6) {
+    margin-top: 50%;
+}
+
+.nav__item:nth-child(7) {
+    margin-top: auto;
+    margin-bottom: 40px;
+}
 .sentence-block {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-width: 620px;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-width: 44%;
     min-height: 890px;
-    background-color: blue;
-    margin: 0px 63.9px 0px 71.98px ;
+    margin: 0px 4% 0px 5%;
+}
+.sentence-block__heading {
+    min-width: 100%;
+    min-height: 271.25px;
+    margin-bottom: 40px;
+}
+
+.sentence-block__heading__greeting {
+    width: 100%;
+    height: 191.25px;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.greeting__text {
+    width: 100%;
+    height: 160px;
+    margin-top: 31px;
+    background: #f5f5f7;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.greeting__text-head {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 57px;
+    margin-left: 5%;
+}
+
+.greeting__text-main {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    margin-left: 5%;
+}
+
+.greeting__img {
+    position: absolute;
+    height: 200px;
+    margin-left: 23%;
+}
+
+.sentence-block__heading-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+}
+
+.sentence-block__heading-card-course {
+    display: flex;
+    align-items: center;
+    margin-right: 4%;
+    min-width: 80%;
+    height: 80px;
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+
+.card-course-logo {
+    display: flex;
+    margin-left: 8.5px;
+    margin-right: 24px;
+    justify-content: center;
+    align-items: center;
+    width: 64px;
+    height: 64px;
+    background: #ffffff;
+    border-radius: 12px;
+}
+
+.card-current-course-text {
+    min-width: 37%;
+}
+.card-current-course-text__heading {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+.card-current-course-text__main {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.card-current-course-button {
+    min-width: 24%;
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    outline: none;
+    margin-right: 4%;
+    margin-left: auto;
+}
+
+.card-course-text {
+    min-width: 30%;
+}
+
+.card-course-text__heading {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.card-course-text__main {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.clock-icon,
+.fire-icon {
+    margin-right: 1%;
+}
+
+.card-course-text__rating {
+    margin-right: 5%;
+}
+
+.card-course-progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 40px;
+}
+
+.progress-text {
+    position: absolute;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.arrow:first-child {
+    margin-right: 16%;
+}
+
+.arrows-block {
+    width: 15%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sentence-block__courses-header {
+    background: white;
+    height: 91px;
+}
+
+.header__heading {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+
+    width: 100%;
+    height: 38px;
+
+    margin-bottom: 16.24px;
+}
+
+.sentence-block__courses-header__navbar {
+    width: 100%;
+    height: 26px;
+    display: flex;
+    align-items: center;
+}
+
+.header__navbar-item {
+    margin-right: 30px;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000000;
+    opacity: 0.3;
+    text-decoration: none;
+}
+.header__navbar-item:hover,
+.header__navbar-item:first-child {
+    opacity: 1;
+}
+
+.sentence-block__courses-card {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    margin-bottom: 16px;
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+
+.instagram-logo {
+    width: 32px;
+    height: 32px;
+}
+
+.card-course-text__time {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 15px;
+    margin-right: 5%;
+    min-width: 10%;
 }
 
 .statistic-block {
-    min-width: 449.59px;
-    height: 833.82px;
-    margin-top: 28.25px;
-    background-color: orange;
+    flex-direction: column;
+    display: flex;
+    min-width: 31%;
+    min-height: 833.82px;
+    margin-top: 31px;
+}
 
+.statistic-block__search-bar {
+    width: 100%;
+    height: 43px;
+    margin-bottom: 26.7px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-bar__form {
+    width: 68%;
+    border-radius: 8px;
+    background-color: #f5f5f7;
+    display: flex;
+    align-items: center;
+}
+
+.form__search-button {
+    padding: 0.69em 1em;
+    margin: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form__search-area {
+    width: 100%;
+    padding: 0.69em 15px;
+    margin: 0;
+    border: 0;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+}
+
+.search-bar__user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info__notification {
+    margin-right: 1.125em;
+    width: 30.63px;
+    height: 36px;
+}
+.user-info__avatar {
+    margin-right: 0.6em;
+    width: 40px;
+    height: 40px;
+}
+
+.statistic-block__info-cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 106.05px;
+    margin-bottom: 31px;
+    background-color: white;
+}
+
+.info-cards__progress {
+    display: flex;
+    align-items: center;
+    width: 47%;
+    height: 96.33px;
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+
+.info-cards__completed {
+    display: flex;
+    align-items: center;
+    width: 47%;
+    height: 96.33px;
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+
+.info-cards__heading-text {
+    margin-left: 35px;
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 102px;
+}
+
+.info-cards__main-text {
+    margin-left: 11px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+}
+.statistic-block-header > .header__navbar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+}
+
+.header__navbar-select {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    background: #f5f5f7;
+    border-radius: 8px;
+    width: 88px;
+    height: 32px;
+    margin-left: auto;
+    margin-right: 13px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+}
+
+.select-text {
+    margin-right: 5px;
+}
+
+.header__navbar-select {
+    margin-right: 5px;
+}
+
+.graph__statistic {
+    width: 105%;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.statistic-block__subscription {
+    display: flex;
+    width: 97%;
+    min-height: 22%;
+    background: #f5f5f7;
+    border-radius: 14px;
+}
+
+.subscription__text {
+    display: flex;
+    width: 43%;
+    height: 77%;
+    flex-direction: column;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.subscription__text-heading {
+    font-family: 'Baloo Bhai 2';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 38px;
+    color: #000000;
+}
+
+.subscription__text-main {
+    height: 48px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    
+}
+
+.button {
+    min-width: 19%;
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    outline: none;
+    margin-left: auto;
+    margin-right: 3%;
+}
+
+.subscription__image {
+    margin-top: 37px;
+    margin-left: 54px;
+    width: 125px;
+    height: 125px;
+}
+
+.subscription__button {
+    height: 40px;
+    background: #000000;
+    border-radius: 8px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 15px;
+    color: #ffffff;
+    outline: none;
+    width: 53%;
+    margin-top: 8%;
+    margin-bottom: 10px;
 }
