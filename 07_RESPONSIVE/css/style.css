@@ -74,6 +74,9 @@ aside {
     height: 191.25px;
     margin-bottom: 24px;
     display: flex;
+    background: #f5f5f7;
+    border-radius: 14px;
+    width: 100%;
 }
 
 .greeting__text {
