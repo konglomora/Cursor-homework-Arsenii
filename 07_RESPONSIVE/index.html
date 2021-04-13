@@ -14,28 +14,219 @@
             href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@400;500;600;700;800&family=Roboto:wght@400;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="./css/normalize.css">
+        <link rel="stylesheet" href="./css/normalize.css" />
         <link rel="stylesheet" href="./css/style.css" />
         <title>HW #7 Arsenii Netrebenko</title>
     </head>
     <body>
         <div class="wrapper">
-            <nav>
-                <div class="nav__item major">
+            <aside>
+                <a href="#" class="nav__item">
+                   <div class="major__nav-item">F.</div>
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/2.svg#home-icon">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/3.svg#education-icon">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/4.svg#user-icon">
+                        </use>
+                    </svg>                
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/5.svg#message-icon">
+                        </use>
+                    </svg> 
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/6.svg#settings-icon">
+                        </use>
+                    </svg> 
+                </a>
+                <a href="#" class="nav__item">
+                    <svg>
+                        <use xlink:href="./img/Sidebar/7.svg#log_out-icon">
+                        </use>
+                    </svg> 
+                </a>
+            </aside>
+            <div class="sentence-block">
+                <div class="sentence-block__heading">
+                    <div class="sentence-block__heading__greeting">
+                        <div class="greeting__text">
+                            <div class="greeting__text-head">Hello Josh!</div>
+                            <div class="greeting__text-main">It’s good to see you again.</div>
+                        </div>
+                        <svg class="greeting__img">
+                            <use xlink:href="./img/Header_boy.svg#boy">
+                        </svg>
+                        
+                    </div>
+                    <div class="sentence-block__heading-card">
+                        <div class="sentence-block__heading-card-course">
+                            <div class="card-course-logo">
+                                <img src="./img/Course cards/Logos/1.svg" alt="Spanish">
+                            </div>
+                            <div class="card-current-course-text">
+                                <div class="card-current-course-text__heading">Spanish B2</div>
+                                <div class="card-current-course-text__main">by Alejandro Velazquez</div>
+                            </div>
+                            <div class="card-course-progress">
+                                <div class="progress-text">83%</div>
+                                <img class="progress-logo" src="./img/Course cards/Icons/Progress-icon.svg" alt="progress">
+                            </div>
+                            <button class="card-current-course-button">Continue</button>
+                        </div>
+                        <div class="arrows-block">
+                            <a href="#" class="arrow">
+                                <img src="./img/Course cards/Icons/Left-arrow.svg" alt="right arrow" />
+                            </a>
+                            <a href="#" class="arrow">
+                                <img src="./img/Course cards/Icons/Right-arrow.svg" alt="right arrow" />
+                            </a>
+                            </div>
+                    </div>
                 </div>
-                <div class="nav__item">
+                <div class="sentence-block__courses">
+                    <header class="sentence-block__courses-header">
+                        <div class="header__heading">Courses</div>
+                        <nav class="sentence-block__courses-header__navbar">
+                            <a href="#" class="header__navbar-item">All Courses</a>
+                            <a href="#" class="header__navbar-item">The Newest</a>
+                            <a href="#" class="header__navbar-item">Top Rated</a>
+                            <a href="#" class="header__navbar-item">Most Popular</a>
+                        </nav>
+                    </header>
+                    <div class="sentence-block__courses-card">
+                            <div class="card-course-logo">
+                                <img src="./img/Course cards/Logos/2.svg" alt="Logo">
+                            </div>
+                            <div class="card-course-text">
+                                <div class="card-course-text__heading">Learn Figma</div>
+                                <div class="card-course-text__main">by Christopher Morgan</div>
+                            </div>
+                            <img class="clock-icon" src="./img/Course cards/Icons/Clock-icon.svg" alt="clock">
+                            <div class="card-course-text__time">6h 30min</div>
+                            <img class="fire-icon" src="./img/Course cards/Icons/Fire-icon.svg" alt="fire">
+                            <div class="card-course-text__rating">4.9</div>
+                            <button class="button">View course</button>
+                    </div>
+                    <div class="sentence-block__courses-card">
+                            <div class="card-course-logo">
+                                <img src="./img/Course cards/Logos/3.svg" alt="Logo">
+                            </div>
+                            <div class="card-course-text">
+                                <div class="card-course-text__heading">Analog photography</div>
+                                <div class="card-course-text__main">by Gordon Norman</div>
+                            </div>
+                            <img class="clock-icon" src="./img/Course cards/Icons/Clock-icon.svg" alt="clock">
+                            <div class="card-course-text__time">3h 15min</div>
+                            <img class="fire-icon" src="./img/Course cards/Icons/Fire-icon.svg" alt="fire">
+                            <div class="card-course-text__rating">4.7</div>
+                            <button class="button">View course</button>
+                    </div>
+                    <div class="sentence-block__courses-card">
+                            <div class="card-course-logo">
+                                <img class="instagram-logo" src="./img/Course cards/Logos/4.png" alt="Logo">
+                            </div>
+                            <div class="card-course-text">
+                                <div class="card-course-text__heading">Master Instagram</div>
+                                <div class="card-course-text__main">by Sophie Gill</div>
+                            </div>
+                            <img class="clock-icon" src="./img/Course cards/Icons/Clock-icon.svg" alt="clock">
+                            <div class="card-course-text__time">7h 40min</div>
+                            <img class="fire-icon" src="./img/Course cards/Icons/Fire-icon.svg" alt="fire">
+                            <div class="card-course-text__rating">4.6</div>
+                            <button class="button">View course</button>
+                    </div>
+                    <div class="sentence-block__courses-card">
+                            <div class="card-course-logo">
+                                <img src="./img/Course cards/Logos/5.svg" alt="Logo">
+                            </div>
+                            <div class="card-course-text">
+                                <div class="card-course-text__heading">Basics of drawing</div>
+                                <div class="card-course-text__main">by Jean Tate</div>
+                            </div>
+                            <img class="clock-icon" src="./img/Course cards/Icons/Clock-icon.svg" alt="clock">
+                            <div class="card-course-text__time">11h 30min</div>
+                            <img class="fire-icon" src="./img/Course cards/Icons/Fire-icon.svg" alt="fire">
+                            <div class="card-course-text__rating">4.8</div>
+                            <button class="button">View course</button>
+                    </div>
+                    <div class="sentence-block__courses-card">
+                            <div class="card-course-logo">
+                                <img src="./img/Course cards/Logos/6.svg" alt="Logo">
+                            </div>
+                            <div class="card-course-text">
+                                <div class="card-course-text__heading">Photoshop - Essence</div>
+                                <div class="card-course-text__main">by David Green</div>
+                            </div>
+                            <img class="clock-icon" src="./img/Course cards/Icons/Clock-icon.svg" alt="clock">
+                            <div class="card-course-text__time">5h 35min</div>
+                            <img class="fire-icon" src="./img/Course cards/Icons/Fire-icon.svg" alt="fire">
+                            <div class="card-course-text__rating">4.7</div>
+                            <button class="button">View course</button>
+                    </div>
                 </div>
-                <div class="nav__item">
+            </div>
+            <div class="statistic-block">
+                <div class="statistic-block__search-bar">
+                    <form class="search-bar__form" action="#">
+                        <button class="form__search-button">
+                            <img src="./img/Search.svg" alt="search">
+                        </button>
+                        <input type="search" class="form__search-area" name="search">
+                    </form>
+                    <div class="search-bar__user-info">
+                        <img class="user-info__notification" src="./img/Notification.svg" alt="notification">
+                        <img class="user-info__avatar" src="./img/User-Avatar.png" alt="user">
+                        <img class="user-info__arrow" src="./img/Arrow-down.svg" alt="arrow=down">
+
+                    </div>    
                 </div>
-                <div class="nav__item">
+                <div class="statistic-block__info-cards">
+                    <div class="info-cards__completed">
+                        <div class="info-cards__heading-text">11</div>
+                        <div class="info-cards__main-text">Courses completed</div>
+                    </div>
+                    <div class="info-cards__progress">
+                        <div class="info-cards__heading-text">4</div>
+                        <div class="info-cards__main-text">Courses in progress</div>
+                    </div>
                 </div>
-                <div class="nav__item">
+                <header class="statistic-block-header">
+                    <div class="header__heading">Your statistics</div>
+                    <nav class="header__navbar">
+                        <a href="#" class="header__navbar-item">All Courses</a>
+                        <a href="#" class="header__navbar-item">The Newest</a>
+                        <div class="header__navbar-select">
+                            <div class="select-text"> Weekly</div>
+                            <img class="user-info__arrow" src="./img/Arrow-down.svg" alt="arrow-down">
+                        </div>
+                        
+                    </nav>
+                </header>
+                <img class="graph__statistic" src="./img/Statistic graph.svg" alt="graph">
+                <div class="statistic-block__subscription">
+                    <div class="subscription__text">
+                        <div class="subscription__text-heading">Learn even more!</div>
+                        <div class="subscription__text-main">Unlock premium features only for $9.99 per month.</div>
+                        <button class="subscription__button">Go Premium</button>
+                    </div>
+                    <object class="subscription__image" data="./img/brain-book.svg" type="image/svg+xml"></object>
                 </div>
-                <div class="nav__item">
-                </div>
-            </nav>
-            <div class="sentence-block"></div>
-            <div class="statistic-block"></div>
+            </div>
         </div>
     </body>
 </html>
