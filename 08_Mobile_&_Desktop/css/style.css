@@ -1,0 +1,102 @@
+main {
+  font-family: "Lato", sans-serif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  min-height: 665px;
+  background: #f4f6f9;
+  background-image: url("../img/header/desktop/Phones.png");
+  background-position: top right;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.header__content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 11%;
+  margin-top: 3%;
+  width: 40%;
+}
+
+.header-logo {
+  width: 99px;
+  height: 32px;
+}
+
+.header__heading-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #333333;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.03em;
+  min-width: 55%;
+  margin-top: 133px;
+}
+
+.header__main-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #4f4f4f;
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 26px;
+  width: 80%;
+  margin-top: 30px;
+}
+
+.header__download-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 50px;
+}
+
+.header__download-links > a {
+  margin-right: 6%;
+}
+
+.first-section {
+  min-height: 562px;
+  background-image: url("../img/main/1st_section/desktop/Rectangle.png");
+  background-position: top left;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background: #ffffff;
+  background-image: url("../img/main/1st_section/desktop/Rectangle.png"), -webkit-gradient(linear, right top, left top, color-stop(5.16%, #ffffff), color-stop(67.14%, rgba(255, 255, 255, 0))), rgba(255, 255, 255, 0.5);
+  background-image: url("../img/main/1st_section/desktop/Rectangle.png"), linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+}
+
+.first-section__match-notifications-images > img {
+  max-width: 25%;
+}
+
+.learn-more {
+  font-family: Lato;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+/*# sourceMappingURL=style.css.map */

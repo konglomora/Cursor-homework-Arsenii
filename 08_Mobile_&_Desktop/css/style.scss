@@ -1,0 +1,104 @@
+// Color variables
+$heading-text-color__first: #333333;
+$heading-text-color__second: #00adee;
+$main-text-color__first: #4f4f4f;
+$main-text-color__second: #ffffff;
+
+// Font variables
+
+$main-font_family: 'Lato', sans-serif;
+
+// Width variables
+$max-width: 1440px;
+$min-width: 360px;
+
+main {
+    font-family: $main-font_family;
+    font-weight: normal;
+    margin: 0;
+}
+
+//  First section
+
+.header {
+    display: flex;
+    width: 100%;
+    min-height: 665px;
+    background: #f4f6f9;
+    background-image: url('../img/header/desktop/Phones.png');
+    background-position: top right;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    &__content-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-left: 11%;
+        margin-top: 3%;
+        width: 40%;
+    }
+
+    &-logo {
+        width: 99px;
+        height: 32px;
+    }
+
+    &__heading-text {
+        display: flex;
+        color: $heading-text-color__first;
+        font-family: $main-font_family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.03em;
+        min-width: 55%;
+        margin-top: 133px;
+    }
+
+    &__main-text {
+        display: flex;
+        color: $main-text-color__first;
+        font-family: $main-font_family;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 26px;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    &__download-links {
+        display: flex;
+        margin-top: 50px;
+    }
+    &__download-links > a {
+        margin-right: 6%;
+    }
+}
+
+.first-section {
+    min-height: 562px;
+    background-image: url('../img/main/1st_section/desktop/Rectangle.png');
+    background-position: top left;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background: #ffffff;
+    background-image: url('../img/main/1st_section/desktop/Rectangle.png'),
+        linear-gradient(270deg, #ffffff 5.16%, rgba(255, 255, 255, 0) 67.14%), rgba(255, 255, 255, 0.5);
+
+    &__match-notifications-images > img {
+        max-width: 25%;
+    }
+}
+
+// Global styles
+.learn-more {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 21px;
+    color: $main-text-color__second;
+    text-decoration: none;
+}
