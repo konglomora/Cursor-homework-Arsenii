@@ -202,6 +202,10 @@ main {
         color: #ffffff;
     }
 
+    .cards-item__text::before {
+        content: '• ';
+    }
+
     &__cards-wrapper {
         display: grid;
         grid-template-columns: auto auto auto;
@@ -229,7 +233,7 @@ main {
 .fourth-section {
     position: relative;
     width: 100%;
-    min-height: 431px;
+    min-height: 30em;
 
     &__text-title {
         display: flex;
@@ -351,7 +355,7 @@ main {
 }
 
 .fifth-section {
-    min-height: 278px;
+    height: 20em;
     background: #fafafa;
     display: flex;
     &__content-wrapper {
@@ -365,9 +369,16 @@ main {
     }
     &__logo-block {
         display: flex;
-
+        flex-wrap: wrap;
+        width: 80%;
         align-items: center;
-        justify-content: space-between;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .logo-block__item {
+        margin-left: 30px;
+        margin-top: 20px;
     }
     .logo-block__item:nth-child(1) {
         max-width: 149px;
@@ -396,19 +407,24 @@ main {
 }
 
 .sixth-section {
-    min-height: 483px;
-    background-image: url('../img/main/6th_section/desktop/mobile-bg.png');
-    background-position: top left;
-    background-size: contain;
-    background-repeat: no-repeat;
+    min-height: 32em;
     display: flex;
     justify-content: center;
     align-items: center;
     width: auto;
 
     &__content-wrapper {
-        margin-left: 37em;
-        width: 32%;
+        margin-left: 25em;
+        margin-right: 6em;
+    }
+    &__image {
+        margin-left: 0;
+        width: 153%;
+        height: 32em;
+    }
+
+    .download-links {
+        margin-left: 0;
     }
 }
 
@@ -435,7 +451,7 @@ main {
     &__links {
         display: flex;
         justify-content: space-between;
-        width: 36%;
+        width: 19em;
     }
     &__links-item {
         display: inline-block;
@@ -451,7 +467,7 @@ main {
     &__socials {
         display: flex;
         justify-content: space-between;
-        min-width: 10%;
+        min-width: 6em;
     }
 
     &__socials-item {
@@ -463,7 +479,7 @@ main {
 a {
     outline: none;
 }
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1301px) {
     .header {
         background-image: none;
         text-align: center;
@@ -552,6 +568,10 @@ a {
             flex-wrap: wrap;
         }
     }
+
+    .fourth-section {
+        min-height: 26em;
+    }
 }
 
 @media screen and (max-width: 721px) {
@@ -562,10 +582,10 @@ a {
         }
 
         &__download-links {
-            width: 100%;
             justify-content: space-between;
         }
     }
+
     .first-section {
         height: 526px;
         &__match-notifications-images {
@@ -584,6 +604,7 @@ a {
             width: 22em;
         }
     }
+
     .second-section {
         display: flex;
         flex-direction: column;
@@ -592,35 +613,160 @@ a {
         align-items: center;
 
         &__text {
-            width: 100%;
             text-align: center;
-            margin-top: 26em;
+            margin-top: 29em;
             position: static;
-        }
-        &__text-main {
-            text-align: center;
-            max-width: 88%;
-        }
-        &__image {
-            background-image: url('../img/main/2nd_section/mobile/Mobile_bg.png');
-            width: 99%;
-            height: 100%;
-            background-size: contain;
-            background-repeat: no-repeat;
             margin-left: auto;
             margin-right: auto;
         }
+        &__text-main {
+            text-align: center;
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__image {
+            background-image: url('../img/main/2nd_section/mobile/Mobile_bg-1.png');
+            width: 99%;
+            height: 66%;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
     }
+
     .third-section {
+        background: #fafafa;
+        background-image: none;
+
         &__cards-wrapper {
             grid-template-columns: auto;
+            width: 100%;
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &__cards-item {
             align-items: center;
-        }
-         .cards-item__text {
             text-align: center;
+        }
+
+        .cards-item__text {
+            text-align: center;
+            color: #4f4f4f;
+            width: 25em;
+        }
+
+        &__text-title {
+            color: #333333;
+        }
+
+        .cards-item__text::before {
+            content: '';
+        }
+    }
+
+    .mobile {
+        fill: #00adee;
+    }
+
+    .fourth-section {
+        min-height: 28em;
+        &__navigation-arrows {
+            height: 92%;
+            background: none;
+            .navigation-arrows__left-arrow {
+                opacity: 0;
+            }
+            .navigation-arrows__right-arrow {
+                margin-right: 28px;
+                margin-top: 55px;
+            }
+        }
+        .slider-item:nth-child(3) {
+            min-width: 82%;
+            margin-left: 93px;
+            margin-right: 50px;
+            max-height: 20%;
+        }
+    }
+
+    .fifth-section {
+        height: 28em;
+        &__content-wrapper {
+            width: 100%;
+        }
+        &__logo-block {
+            height: 10em;
+            width: 63%;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .logo-block__item {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            &:nth-child(1) {
+                width: 200px;
+            }
+        }
+    }
+
+    .sixth-section {
+        min-height: 32em;
+        flex-direction: column;
+        align-items:center;
+
+        &__content-wrapper {
+            order: 1;
+            margin: 3em auto 3em auto;
+            text-align: center;
+            align-items:center;
+        }
+
+        &__text-main {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        &__image {
+            order: 2;
+            margin-left: 0;
+            width: 100%;
+            height: 26em;
+        }
+        .download-links {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+    .footer {
+        height: 13em;
+        &__content-wrapper {
+            height: 10em;
+            flex-direction: column;
+            align-items:flex-start;
+            justify-content:flex-start;
+        }
+
+        &__logo {
+            order: 1;
+            margin-top: 1em;
+        }
+
+        &__links {
+            order: 3;
+            margin-top: 2em;
+            width: 100%;
+        }
+
+        &__socials {
+            order: 2;
+            margin-top: 1em;
+
         }
     }
 }
