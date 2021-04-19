@@ -64,6 +64,10 @@ main {
   text-decoration: none;
 }
 
+.card-icon {
+  fill: #f4f6f9;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -831,7 +835,7 @@ a {
     text-align: center;
   }
   .third-section .card-icon {
-    stroke: #00adee;
+    fill: #00adee;
   }
   .third-section .cards-item__text {
     text-align: center;

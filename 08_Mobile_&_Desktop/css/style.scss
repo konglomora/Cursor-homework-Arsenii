@@ -80,6 +80,10 @@ main {
     text-decoration: none;
 }
 
+.card-icon {
+    fill: #f4f6f9;
+}
+
 // Sections
 
 .header {
@@ -704,7 +708,7 @@ a {
         }
 
         .card-icon {
-            stroke: #00adee;
+            fill: #00adee;
         }
 
         .cards-item__text {
