@@ -1,13 +1,13 @@
 @charset "UTF-8";
+.fourth-section .arrow, a {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 a:hover {
   color: red;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
-}
-
-.fourth-section .arrow, a {
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .fourth-section .arrow:hover {

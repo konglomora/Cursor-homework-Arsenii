@@ -8,16 +8,17 @@ $main-text-color__second: #ffffff;
 
 $main-font_family: 'Lato', sans-serif;
 
-// Width variables
+// Hovers
 
+.fourth-section .arrow, a {
+    transition: 1s ;
+}
+    
 a:hover {
     color: red;
     transition: 0.3s ease-in-out;
 }
 
-.fourth-section .arrow, a {
-    transition: 1s ;
-}
 
 .fourth-section .arrow:hover {
     width: 68px;
@@ -27,6 +28,8 @@ a:hover {
     border-radius: 50%;
     transform: translate(10px);
 }
+
+// Width variables
 
 $max-width: 1440px;
 $min-width: 360px;
