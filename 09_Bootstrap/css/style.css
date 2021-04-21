@@ -1,4 +1,91 @@
 body {
-  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.icon-main-logo {
+  width: 6.5em;
+  height: 2em;
+}
+
+header {
+  border-bottom: 1px solid #dbdbdb;
+}
+
+main {
+  margin-top: 29px;
+}
+
+.btn {
+  background: #4094ef;
+  border-radius: 3px;
+}
+
+.posts-header {
+  border-top: 1px solid #dbdbdb;
+}
+
+.posts-header-item {
+  width: 10px;
+}
+
+.posts * img {
+  width: 100%;
+}
+
+.posts .col-4 {
+  margin-top: 2em;
+}
+
+.posts-icon,
+.tagged-icon {
+  width: 11px;
+  height: 11px;
+}
+
+.stories {
+  margin-bottom: 55px;
+  margin-top: 52px;
+}
+
+.stories-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.selector {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 39%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.8em;
+  padding: 1em 0;
+}
+
+.selector-posts {
+  border-top: 1px solid black;
+}
+
+.disabled {
+  color: #8f8f8f;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,83 @@
 body {
-    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+// Header
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    &-main-logo {
+        width: 6.5em;
+        height: 2em;
+    }
+}
+
+header {
+    border-bottom: 1px solid #dbdbdb;
+}
+
+// Main
+
+main {
+    margin-top: 29px;
+}
+
+.btn {
+    background: #4094ef;
+    border-radius: 3px;
+}
+
+// Posts
+
+.posts {
+    &-header {
+        border-top: 1px solid #dbdbdb;
+        &-item {
+            width: 10px;
+        }
+    }
+    & * img {
+        width: 100%;
+    }
+
+    .col-4 {
+        margin-top: 2em;
+    }
+}
+
+.posts-icon,
+.tagged-icon {
+    width: 11px;
+    height: 11px;
+}
+
+.stories {
+    margin-bottom: 55px;
+    margin-top: 52px;
+    &-item {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+.selector {
+    align-items: center;
+    width: 39%;
+
+    justify-content: space-around;
+    align-items: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.8em;
+    padding: 1em 0;
+    &-posts{
+        border-top: 1px solid black;
+    }
+}
+.disabled {
+    color: #8f8f8f;
 }
