@@ -18,7 +18,7 @@
     <body>
         <header class="container-fluid header">
             <div class="container">
-                <nav class="navbar navbar-expand-lg">
+                <nav class="navbar navbar-expand-lg justify-content-between ">
                     <button
                         class="navbar-toggler"
                         type="button"
@@ -35,10 +35,13 @@
                             <use xlink:href="./images/sprite.svg#main-logo"></use>
                         </svg>
                     </a>
-                    <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <form class="form-inline my-2 my-lg-0 search-box">
+                            <svg class="icon-search">
+                                    <use xlink:href="./images/sprite.svg#search"></use>
+                                </svg>
+                        <input class="form-control mr-sm-2 search-input" type="search" placeholder="Search" aria-label="Search" />
                     </form>
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
                             <a class="nav-link" href="#">
                                 <svg class="icon">
@@ -81,50 +84,62 @@
         </header>
 
         <main class="container">
-            <div class="row">
+            <div class="row main-info">
                 <div class="col-3 big-avatar">
                     <img src="./images/Ellipse-big.png" alt="main avatar" />
                 </div>
-                <div class="col-9">
-                    <div class="row">
-                        <span>name</span>
-                        <button type="button" class="btn btn-primary">Follow</button>
-                        <button type="button" class="btn btn-primary">
-                            <svg class="icon">
-                                <use xlink:href="./images/sprite.svg#arrow-down-icon"></use>
-                            </svg>
-                        </button>
-                        <svg class="icon">
-                            <use xlink:href="./images/sprite.svg#more-icon"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="./images/sprite.svg#more-icon"></use>
-                        </svg>
-                        <svg class="icon">
-                            <use xlink:href="./images/sprite.svg#more-icon"></use>
-                        </svg>
-                    </div>
+                <div class="col-7">
+                    <div class="d-flex flex-column main-info__text">
+                        <div class="p-2 main-info__header">
+                            <span class="main-name">name</span>
+                            <div class="buttons">
+                            <button type="button" class="btn btn-primary follow-btn">Follow</button>
+                            <button type="button" class="btn btn-primary more-btn">
+                                <svg class="icon-more">
+                                    <use xlink:href="./images/sprite.svg#arrow-down-icon"></use>
+                                </svg>
+                            </button>
+                            </div>
+                            <div class="leaarn-more">
+                                <svg class="icon more">
+                                    <use xlink:href="./images/sprite.svg#more-icon"></use>
+                                </svg>
+                                <svg class="icon more">
+                                    <use xlink:href="./images/sprite.svg#more-icon"></use>
+                                </svg>
+                                <svg class="icon more">
+                                    <use xlink:href="./images/sprite.svg#more-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="col-1 counter-posts">79</div>
-                        <div class="col-1 counter-label">posts</div>
+                        <div class="p-2 justify-content-start counter">
+                            <div class="d-inline-flex counter-item">
+                                <span class="counter number">79</span>
+                                <span class="counter label">posts</span>
+                            </div>
 
-                        <div class="col-1 counter">379</div>
-                        <div class="col-1 counter-label">followers</div>
+                            <div class="d-inline-flex counter-item">
+                                <span class="counter number">379</span>
+                                <span class="counter label">followers</span>
+                            </div>
 
-                        <div class="col-1 counter">179</div>
-                        <div class="col-1 counter-label">following</div>
-                    </div>
+                            <div class="d-inline-flex counter-item">
+                                <span class="counter number">179</span>
+                                <span class="counter label">following</span>
+                            </div>
+                        </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <div>Name</div>
-                            <p>
-                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
-                                has been the industry's standard dummy text.
-                            </p>
+                        <div class="p-2">
+                            <div class="">
+                                <div class="name">Name</div>
+                                <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                    Ipsum has been the industry's standard dummy text.
+                                </p>
 
-                            <a href="#">bit.ly/35Ce3mX</a>
+                                <a href="#">bit.ly/35Ce3mX</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -133,83 +148,79 @@
             <div class="row stories">
                 <div class="col-1 stories-item">
                     <img src="./images/Ellipse.png" alt="stories" />
-                    <div>Name</div>
+                    <div class="name">Name</div>
                 </div>
                 <div class="col-1 stories-item">
                     <img src="./images/Ellipse.png" alt="stories" />
-                    <div>Name</div>
+                    <div class="name">Name</div>
                 </div>
                 <div class="col-1 stories-item">
                     <img src="./images/Ellipse.png" alt="stories" />
-                    <div>Name</div>
+                    <div class="name">Name</div>
                 </div>
             </div>
         </main>
 
         <div class="container posts">
-            <div class="row  justify-content-center posts-header">
-                <div class="col-2 posts-header-item">
-                      <div class="selector selector-posts">
-                            <svg class="icon posts-icon">
-                                <use xlink:href="./images/sprite.svg#posts-icon"></use>
-                            </svg>
-                        <span class="posts-label">POSTS</span>
-
-                        </div> 
-                 </div>
-                <div class="col-2">
-                   <div class="selector disabled">
-                        <svg class="icon tagged-icon">
-                            <use xlink:href="./images/sprite.svg#tagged-icon"></use>
-                        </svg>
-                    <span class="tagged-label">TAGGED</>
-                   </div>
-            </div>
-            <div class="row">
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
+            <div class="row justify-content-center posts-header">
+                <div class="d-inline-flex p-2 selector posts-header-item active">
+                    <svg class="icon posts-icon">
+                        <use xlink:href="./images/sprite.svg#posts-icon"></use>
+                    </svg>
+                    <span class="posts label">POSTS</span>
                 </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
+                <div class="d-inline-flex p-2 selector posts-header-item disabled">
+                    <svg class="icon tagged-icon">
+                        <use xlink:href="./images/sprite.svg#tagged-icon"></use>
+                    </svg>
+                    <span class="tagged label">TAGGED</span>
                 </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
-                </div>
-                <div class="col-4 no-margin">
-                    <img src="./images/Rectangle.png" alt="photo" />
+                <div class="row">
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
+                    <div class="col-4 no-margin">
+                        <img src="./images/Rectangle.png" alt="photo" />
+                    </div>
                 </div>
             </div>
         </div>
