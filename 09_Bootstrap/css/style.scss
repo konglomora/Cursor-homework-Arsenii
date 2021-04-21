@@ -2,9 +2,38 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
+    background: #fafafa;
+}
+
+.label {
+    margin-left: 5px;
+}
+
+.name,
+.number {
+    font-weight: 700;
+    font-size: 17px;
+    color: #262626;
+}
+
+.main-name {
+    font-size: 26px;
+    line-height: 32px;
+    color: #262626;
+    font-weight: 500;
 }
 
 // Header
+
+.nav-link {
+    .icon:hover,
+    .icon:focus,
+    a:focus,
+    a:hover {
+        stroke: #e6e6eb;
+        fill: black;
+    }
+}
 
 .icon {
     width: 1.5em;
@@ -13,6 +42,45 @@ body {
         width: 6.5em;
         height: 2em;
     }
+    &-search {
+        width: 9px;
+        height: 9px;
+    }
+}
+
+.search-box {
+    width: 28%;
+    background: #fafafa;
+    border: 1px solid #dbdbdb;
+    box-sizing: border-box;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    padding: 0px 5px;
+}
+
+.search-input {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8f8f8f;
+}
+
+.search-box > .search-input {
+    padding: 0 0 0 10px;
+    border: none;
+    background: #fafafa;
+    width: 23%;
+    transition: 0.3s;
+}
+
+.form-inline .form-control:focus {
+    width: 90%;
+    box-shadow: none;
+    transition: 0.55s;
 }
 
 header {
@@ -25,18 +93,83 @@ main {
     margin-top: 29px;
 }
 
+.main-info {
+    padding-left: 80px;
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 46%;
+    }
+}
+
 .btn {
     background: #4094ef;
     border-radius: 3px;
 }
 
-// Posts
+.follow-btn {
+    padding: 7px 26px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+}
 
+.more-btn {
+    padding: 3px 13px;
+}
+
+.icon-more {
+    width: 9px;
+    height: 6px;
+}
+
+.more {
+    width: 4px;
+    height: 4px;
+}
+
+.counter-item {
+    margin-right: 15px;
+}
+
+.stories {
+    padding-left: 85px;
+    margin-bottom: 55px;
+    margin-top: 52px;
+    display: flex;
+    align-items: center;
+    &-item {
+        margin-right: 34px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        img {
+            border: 2px solid #dbdbdb;
+            border-radius: 100%;
+            padding: 2px;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+// PostsS
 .posts {
     &-header {
         border-top: 1px solid #dbdbdb;
         &-item {
-            width: 10px;
+            margin-right: 2%;
+            margin-left: 2%;
+            .active {
+                border-top: 1px solid black;
+            }
+        }
+        &-item:focus,
+        &-item:hover {
+            border-top: 1px solid black;
+            color: #262626;
+            cursor: pointer;
         }
     }
     & * img {
@@ -54,30 +187,30 @@ main {
     height: 11px;
 }
 
-.stories {
-    margin-bottom: 55px;
-    margin-top: 52px;
-    &-item {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-    }
+.posts-icon:hover,
+.tagged-icon:hover {
+    stroke: #262626;
+    cursor: pointer;
 }
+
 .selector {
     align-items: center;
-    width: 39%;
-
     justify-content: space-around;
     align-items: center;
-
     text-transform: uppercase;
     font-weight: 700;
     font-size: 0.8em;
     padding: 1em 0;
-    &-posts{
-        border-top: 1px solid black;
-    }
 }
+
+.selector:hover, .selector:focus  {
+
+}
+
+.active {
+    border-top: 1px solid #262626;
+}
+
 .disabled {
     color: #8f8f8f;
 }

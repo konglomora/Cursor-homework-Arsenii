@@ -2,6 +2,33 @@ body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 400;
+  background: #fafafa;
+}
+
+.label {
+  margin-left: 5px;
+}
+
+.name,
+.number {
+  font-weight: 700;
+  font-size: 17px;
+  color: #262626;
+}
+
+.main-name {
+  font-size: 26px;
+  line-height: 32px;
+  color: #262626;
+  font-weight: 500;
+}
+
+.nav-link .icon:hover,
+.nav-link .icon:focus,
+.nav-link a:focus,
+.nav-link a:hover {
+  stroke: #e6e6eb;
+  fill: black;
 }
 
 .icon {
@@ -14,6 +41,57 @@ body {
   height: 2em;
 }
 
+.icon-search {
+  width: 9px;
+  height: 9px;
+}
+
+.search-box {
+  width: 28%;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  padding: 0px 5px;
+}
+
+.search-input {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  color: #8f8f8f;
+}
+
+.search-box > .search-input {
+  padding: 0 0 0 10px;
+  border: none;
+  background: #fafafa;
+  width: 23%;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.form-inline .form-control:focus {
+  width: 90%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: 0.55s;
+  transition: 0.55s;
+}
+
 header {
   border-bottom: 1px solid #dbdbdb;
 }
@@ -22,9 +100,85 @@ main {
   margin-top: 29px;
 }
 
+.main-info {
+  padding-left: 80px;
+}
+
+.main-info__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 46%;
+}
+
 .btn {
   background: #4094ef;
   border-radius: 3px;
+}
+
+.follow-btn {
+  padding: 7px 26px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.more-btn {
+  padding: 3px 13px;
+}
+
+.icon-more {
+  width: 9px;
+  height: 6px;
+}
+
+.more {
+  width: 4px;
+  height: 4px;
+}
+
+.counter-item {
+  margin-right: 15px;
+}
+
+.stories {
+  padding-left: 85px;
+  margin-bottom: 55px;
+  margin-top: 52px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stories-item {
+  margin-right: 34px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.stories-item img {
+  border: 2px solid #dbdbdb;
+  border-radius: 100%;
+  padding: 2px;
+  margin-bottom: 15px;
 }
 
 .posts-header {
@@ -32,7 +186,18 @@ main {
 }
 
 .posts-header-item {
-  width: 10px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.posts-header-item .active {
+  border-top: 1px solid black;
+}
+
+.posts-header-item:focus, .posts-header-item:hover {
+  border-top: 1px solid black;
+  color: #262626;
+  cursor: pointer;
 }
 
 .posts * img {
@@ -49,29 +214,16 @@ main {
   height: 11px;
 }
 
-.stories {
-  margin-bottom: 55px;
-  margin-top: 52px;
-}
-
-.stories-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+.posts-icon:hover,
+.tagged-icon:hover {
+  stroke: #262626;
+  cursor: pointer;
 }
 
 .selector {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 39%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   align-items: center;
@@ -81,8 +233,8 @@ main {
   padding: 1em 0;
 }
 
-.selector-posts {
-  border-top: 1px solid black;
+.active {
+  border-top: 1px solid #262626;
 }
 
 .disabled {
