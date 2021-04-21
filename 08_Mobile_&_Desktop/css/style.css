@@ -833,6 +833,7 @@ a {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    margin: 0;
   }
   .third-section .card-icon {
     fill: #00adee;
@@ -840,7 +841,6 @@ a {
   .third-section .cards-item__text {
     text-align: center;
     color: #4f4f4f;
-    width: 25em;
   }
   .third-section__text-title {
     text-align: center;

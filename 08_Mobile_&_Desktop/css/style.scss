@@ -705,6 +705,7 @@ a {
         &__cards-item {
             align-items: center;
             text-align: center;
+            margin: 0;
         }
 
         .card-icon {
@@ -714,7 +715,8 @@ a {
         .cards-item__text {
             text-align: center;
             color: #4f4f4f;
-            width: 25em;
+           
+           
         }
 
         &__text-title {
