@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.star-wars__container {
+    width: 100%;
+    background-color: black;
+    height: 50vh;
+    justify-content: cent;
+}
+
+.pendulum__container {
+    width: 100%;
+    background-color: aliceblue;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pendlum {
+    width: 15em;
+    height: 191px;
+    display: flex;
+    justify-content: space-around;
+    span {
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            background-color: violet;
+            width: 3em;
+            height: 3em;
+            border-radius: 50%;
+            left: -1.5em;
+            display: inline-block;
+            box-shadow: 20px 20px #80808021;
+        }
+        &:first-child {
+            animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
+            --direction: 1;
+        }
+        &:last-child {
+            animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
+            --direction: -1;
+        }
+    }
+}
+
+@keyframes moving-up {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(calc(45deg * var(--direction)));
+    }
+}
