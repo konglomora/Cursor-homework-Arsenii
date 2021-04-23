@@ -34,7 +34,7 @@ body {
     justify-content: space-around;
     span {
         position: relative;
-        &::before {
+        &::after {
             content: '';
             position: absolute;
             bottom: 0;
@@ -44,20 +44,23 @@ body {
             border-radius: 50%;
             left: -1.5em;
             display: inline-block;
-            box-shadow: 20px 20px #80808021;
-        }
-        &:first-child {
-            animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
-            --direction: 1;
-        }
-        &:last-child {
-            animation: moving-up 0.75s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
-            --direction: -1;
+            border: 3px solid rgb(243, 40, 243);
+            box-shadow: 8px 43px 10px #80808021;
         }
     }
 }
 
-@keyframes moving-up {
+    span:last-child {
+        animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
+        --direction: -1;
+    }
+    span:first-child {
+        animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
+        --direction: 1;
+        
+    }
+
+@keyframes moving {
     0% {
         transform: rotate(0deg);
     }
