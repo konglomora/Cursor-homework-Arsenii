@@ -22,12 +22,193 @@ body {
 }
 
 .star-wars__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   background-color: black;
   height: 50vh;
-  -webkit-box-pack: cent;
-      -ms-flex-pack: cent;
-          justify-content: cent;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sabers-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50%;
+  height: 70%;
+}
+
+.lightsaber {
+  width: 250px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.lightsaber::before {
+  content: ' ';
+  display: inline-block;
+  width: 15%;
+  height: 13px;
+  background-color: aliceblue;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+}
+
+.lightsaber::after {
+  content: '';
+  display: inline-block;
+  width: 75%;
+  height: 13px;
+  background-color: aliceblue;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.lightsaber:nth-child(2)::before {
+  content: ' ';
+  display: inline-block;
+  width: 75%;
+  height: 13px;
+  background-color: aliceblue;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.lightsaber:nth-child(2)::after {
+  content: '';
+  display: inline-block;
+  width: 15%;
+  height: 13px;
+  background-color: aliceblue;
+  border-top-right-radius: 2px;
+  border-bottom-right-radius: 2px;
+}
+
+.first-saber {
+  position: relative;
+  -webkit-animation-name: saber-hide;
+          animation-name: saber-hide;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes saber-hide {
+  0% {
+    top: 0%;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -30%;
+    opacity: 0.01;
+  }
+}
+
+@keyframes saber-hide {
+  0% {
+    top: 0%;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    top: -30%;
+    opacity: 0.01;
+  }
+}
+
+.second-saber {
+  position: relative;
+  -webkit-animation-name: saber-right;
+          animation-name: saber-right;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes saber-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0%;
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 15%;
+  }
+}
+
+@keyframes saber-right {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0%;
+  }
+  100% {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    top: 15%;
+  }
+}
+
+.third-saber {
+  position: relative;
+  -webkit-animation-name: saber-left;
+          animation-name: saber-left;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+}
+
+@-webkit-keyframes saber-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0%;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -17%;
+  }
+}
+
+@keyframes saber-left {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    top: 0%;
+  }
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
+    top: -17%;
+  }
 }
 
 .pendulum__container {
@@ -74,13 +255,13 @@ body {
           box-shadow: 8px 43px 10px #80808021;
 }
 
-span:last-child {
+.pendlum span:last-child {
   -webkit-animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
           animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
   --direction: -1;
 }
 
-span:first-child {
+.pendlum span:first-child {
   animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
   --direction: 1;
 }

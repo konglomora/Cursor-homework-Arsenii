@@ -13,10 +13,133 @@ body {
 }
 
 .star-wars__container {
+    display: flex;
     width: 100%;
     background-color: black;
     height: 50vh;
-    justify-content: cent;
+    justify-content: center;
+    align-items: center;
+}
+
+.sabers-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 70%;
+    // background-color: aqua;
+}
+
+.lightsaber {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    // border: 1px solid aliceblue;
+    &::before {
+        content: ' ';
+        display: inline-block;
+        width: 15%;
+        height: 13px;
+        background-color: aliceblue;
+        border-top-left-radius: 2px;
+        border-bottom-left-radius: 2px;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 75%;
+        height: 13px;
+        background-color: aliceblue;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+    }
+}
+
+.lightsaber:nth-child(2) {
+    &::before {
+        content: ' ';
+        display: inline-block;
+        width: 75%;
+        height: 13px;
+        background-color: aliceblue;
+        border-top-left-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+    &::after {
+        content: '';
+        display: inline-block;
+        width: 15%;
+        height: 13px;
+        background-color: aliceblue;
+        border-top-right-radius: 2px;
+        border-bottom-right-radius: 2px;
+    }
+}
+
+.first-saber {
+    position: relative;
+    animation-name: saber-hide;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes saber-hide {
+    0% {
+        top: 0%;
+    }
+
+    50% {
+        opacity: 0.3;
+    }
+
+    100% {
+        top: -30%;
+        opacity: 0.01;
+    }
+}
+
+.second-saber {
+    position: relative;
+    animation-name: saber-right;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes saber-right {
+    0% {
+        transform: rotate(0deg);
+        top: 0%
+    }
+
+
+    100% {
+        transform: rotate(45deg);
+        top: 15%
+    }
+}
+
+.third-saber {
+    position: relative;
+    animation-name: saber-left;
+    animation-duration: 1.5s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes saber-left {
+    0% {
+        transform: rotate(0deg);
+        top: 0%
+    }
+
+
+    100% {
+        transform: rotate(-45deg);
+        top: -17%;
+    }
 }
 
 .pendulum__container {
@@ -47,18 +170,16 @@ body {
             border: 3px solid rgb(243, 40, 243);
             box-shadow: 8px 43px 10px #80808021;
         }
+        &:last-child {
+            animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
+            --direction: -1;
+        }
+        &:first-child {
+            animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
+            --direction: 1;
+        }
     }
 }
-
-    span:last-child {
-        animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
-        --direction: -1;
-    }
-    span:first-child {
-        animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate-reverse;
-        --direction: 1;
-        
-    }
 
 @keyframes moving {
     0% {
