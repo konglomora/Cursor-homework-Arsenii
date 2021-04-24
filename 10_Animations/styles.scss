@@ -16,8 +16,7 @@ body {
     display: flex;
     width: 100%;
     background-color: black;
-    height: 50vh;
-    min-height: 250px;
+    height: 50%;
     justify-content: center;
     align-items: center;
 }
@@ -25,16 +24,17 @@ body {
 .sabers-wrapper {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     width: 50%;
-    height: 46%;
+    height: 50%;
+    min-height: 400px;
     cursor: pointer;
     position: relative;
 }
 
 .lightsaber {
-    width: 40%;
+    width: 20em;
     min-width: 200px;
     transition: all 0.5s linear;
     position: absolute;
@@ -85,14 +85,15 @@ body {
 }
 
 .first-saber {
-    top: 0%;
+    top: 25%;
 }
 
 .second-saber {
+    top: 50%;
 }
 
 .third-saber {
-    bottom: 0%;
+    bottom: 25%;
 }
 
 .selected > .first-saber {
@@ -101,12 +102,14 @@ body {
 }
 
 .selected > .second-saber {
-    transform: rotate(45deg) translate(14px, 26px);
+    transform: rotate(45deg) translate(2.5em, 2em);
 }
 
+
 .selected > .third-saber {
-    transform: rotate(-45deg) translate(43px, -19px);
+    transform: rotate(-45deg) translate(1em, -2em);
 }
+
 
 .selected:hover .second-saber::before {
     box-shadow: rgb(224, 0, 22) 0px -14px 128px 40px;
