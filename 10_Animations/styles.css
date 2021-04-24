@@ -28,6 +28,7 @@ body {
   width: 100%;
   background-color: black;
   height: 50vh;
+  min-height: 250px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -51,23 +52,30 @@ body {
           align-items: center;
   width: 50%;
   height: 70%;
+  cursor: pointer;
 }
 
 .lightsaber {
-  width: 250px;
+  width: 60%;
+  max-width: 280px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .lightsaber::before {
   content: ' ';
   display: inline-block;
   width: 15%;
-  height: 13px;
+  height: 15px;
   background-color: aliceblue;
   border-top-left-radius: 2px;
   border-bottom-left-radius: 2px;
@@ -97,7 +105,7 @@ body {
   content: '';
   display: inline-block;
   width: 15%;
-  height: 13px;
+  height: 15px;
   background-color: aliceblue;
   border-top-right-radius: 2px;
   border-bottom-right-radius: 2px;
@@ -147,6 +155,8 @@ body {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @-webkit-keyframes saber-right {
@@ -183,6 +193,8 @@ body {
           animation-duration: 1.5s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
 }
 
 @-webkit-keyframes saber-left {
@@ -244,13 +256,13 @@ body {
   content: '';
   position: absolute;
   bottom: 0;
-  background-color: violet;
+  background-color: black;
   width: 3em;
   height: 3em;
   border-radius: 50%;
   left: -1.5em;
   display: inline-block;
-  border: 3px solid #f328f3;
+  border: 3px solid rgba(153, 149, 153, 0.531);
   -webkit-box-shadow: 8px 43px 10px #80808021;
           box-shadow: 8px 43px 10px #80808021;
 }

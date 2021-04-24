@@ -17,6 +17,7 @@ body {
     width: 100%;
     background-color: black;
     height: 50vh;
+    min-height: 250px;
     justify-content: center;
     align-items: center;
 }
@@ -28,19 +29,22 @@ body {
     align-items: center;
     width: 50%;
     height: 70%;
+    cursor: pointer;
     // background-color: aqua;
 }
 
 .lightsaber {
-    width: 250px;
+    width: 60%;
+    max-width: 280px;
     display: flex;
     justify-content: space-between;
-    // border: 1px solid aliceblue;
+    align-items: center;
+    transition: all 1s;
     &::before {
         content: ' ';
         display: inline-block;
         width: 15%;
-        height: 13px;
+        height: 15px;
         background-color: aliceblue;
         border-top-left-radius: 2px;
         border-bottom-left-radius: 2px;
@@ -70,7 +74,7 @@ body {
         content: '';
         display: inline-block;
         width: 15%;
-        height: 13px;
+        height: 15px;
         background-color: aliceblue;
         border-top-right-radius: 2px;
         border-bottom-right-radius: 2px;
@@ -82,7 +86,6 @@ body {
     animation-name: saber-hide;
     animation-duration: 1.5s;
     animation-timing-function: ease;
-
 }
 
 @keyframes saber-hide {
@@ -105,19 +108,18 @@ body {
     animation-name: saber-right;
     animation-duration: 1.5s;
     animation-timing-function: ease;
-
+    animation-direction: alternate;
 }
 
 @keyframes saber-right {
     0% {
         transform: rotate(0deg);
-        top: 0%
+        top: 0%;
     }
-
 
     100% {
         transform: rotate(45deg);
-        top: 15%
+        top: 15%;
     }
 }
 
@@ -126,15 +128,14 @@ body {
     animation-name: saber-left;
     animation-duration: 1.5s;
     animation-timing-function: ease;
-
+    animation-direction: alternate;
 }
 
 @keyframes saber-left {
     0% {
         transform: rotate(0deg);
-        top: 0%
+        top: 0%;
     }
-
 
     100% {
         transform: rotate(-45deg);
@@ -161,13 +162,13 @@ body {
             content: '';
             position: absolute;
             bottom: 0;
-            background-color: violet;
+            background-color: black;
             width: 3em;
             height: 3em;
             border-radius: 50%;
             left: -1.5em;
             display: inline-block;
-            border: 3px solid rgb(243, 40, 243);
+            border: 3px solid rgba(153, 149, 153, 0.531);
             box-shadow: 8px 43px 10px #80808021;
         }
         &:last-child {
