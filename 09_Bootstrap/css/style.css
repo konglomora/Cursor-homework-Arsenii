@@ -49,12 +49,12 @@ body {
 }
 
 .search-box {
-  width: 28%;
+  width: 21%;
   background: #fafafa;
   border: 1px solid #dbdbdb;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border-radius: 3px;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,20 +78,25 @@ body {
 }
 
 .search-box > .search-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding: 0 0 0 10px;
   border: none;
   background: #fafafa;
   width: 69px;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-overflow: ellipsis;
 }
 
 .form-inline .form-control:focus {
-  width: 90%;
+  width: 80%;
   -webkit-box-shadow: none;
           box-shadow: none;
   -webkit-transition: 0.55s;
   transition: 0.55s;
+  color: black;
 }
 
 header {

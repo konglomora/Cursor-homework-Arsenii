@@ -51,11 +51,11 @@ body {
 }
 
 .search-box {
-    width: 28%;
+    width: 21%;
     background: #fafafa;
     border: 1px solid #dbdbdb;
     box-sizing: border-box;
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,17 +72,20 @@ body {
 }
 
 .search-box > .search-input {
+    display: flex;
     padding: 0 0 0 10px;
     border: none;
     background: #fafafa;
     width: 69px;
     transition: 0.3s;
+    text-overflow: ellipsis;
 }
 
 .form-inline .form-control:focus {
-    width: 90%;
+    width: 80%;
     box-shadow: none;
     transition: 0.55s;
+    color: black;
 }
 
 header {
@@ -265,11 +268,6 @@ main {
         width: auto;
         padding: 20 00px;
     }
-    // .nav-item:nth-child(2)
-    // {
-    //     width: 64px;
-    //     padding: 20 0px;
-    // }
     .main-info__text {
         margin-left: 10px;
     }
