@@ -1,5 +1,314 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
+// GLOBAL
+
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #fdfdfd;
+    background-image: url('../img/big-background.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+
+.content-wrapper {
+    max-width: 1180px;
+    height: 100%;
+    a {
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    a:hover,
+    a:focus {
+        color: #111b47;
+        font-weight: 900;
+    }
+}
+
+.button__black {
+    border: 2px solid #111b47;
+    background: #111b47;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #ffffff;
+    height: 2rem;
+    padding: 2px 12px;
+    transition: 0.5s;
+}
+
+.button__black:hover,
+.button__black:focus {
+    border: 2px solid #091133;
+    background: transparent;
+    color: #091133;
+}
+
+.button__transparent {
+    border: 2px solid #091133;
+    border-radius: 2px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #091133;
+    background: transparent;
+    height: 2rem;
+    padding: 2px 12px;
+    transition: 0.5s;
+}
+
+.text {
+    .small-title-icon {
+        max-width: 36px;
+        max-height: 36px;
+    }
+    &__title-fs {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 50px;
+        line-height: 66px;
+        letter-spacing: 1px;
+        color: #091133;
+        margin-bottom: 20px;
+    }
+    &__title {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        color: #091133;
+        margin-bottom: 1rem;
+    }
+}
+
+// NAVBAR
+
+.navbar {
+    background-color: transparent;
+    .navlink__item {
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        color: #505f98;
+    }
+}
+
+.main-text-logo {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 38px;
+    color: #37447e;
+    cursor: pointer;
+}
+
+// SECTIONS
+
+.section-first {
+    margin-top: 11em;
+
+    .buttons {
+        margin-top: 5em;
+    }
+}
+
+.section-second {
+    margin-top: 35em;
+    .text {
+        margin-top: 3em;
+    }
+    .login {
+        width: 540px;
+        height: 524px;
+    }
+    .small-text {
+        .text__title {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 26px;
+            margin-bottom: 6px;
+            color: #091133;
+        }
+        .text__description {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 18px;
+            color: #5d6970;
+        }
+        .small-title-icon {
+            margin-bottom: 14px;
+        }
+    }
+}
+
+.section-third {
+    height: 105em;
+    margin-top: 14em;
+    .flower__container {
+        .text {
+            margin-top: 3em;
+        }
+        .flower {
+            width: 480px;
+            height: 315px;
+        }
+    }
+    .flamingo__container {
+        .text {
+            margin-top: 6em;
+        }
+        .flamingo {
+            width: 540px;
+            height: 387px;
+        }
+    }
+    .e-dog__container {
+        .text {
+            &__description {
+                margin-bottom: 40px;
+            }
+        }
+        .e-dog {
+            width: 445px;
+            height: 312px;
+        }
+    }
+}
+
+.section-fourth {
+    height: 50em;
+    margin-top: 10em;
+    background-image: url('../img/footer-background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    .subscription-block {
+        padding-top: 15em;
+        .text {
+            &__description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #6f7cb2;
+            }
+        }
+        .price {
+            &__title {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 50px;
+                line-height: 66px;
+                letter-spacing: 1px;
+                color: #222f65;
+                margin-top: 36px;
+            }
+            &__description {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 16px;
+                line-height: 26px;
+                color: #37447e;
+            }
+
+            &__sub-heading {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #5d6970;
+                margin-top: 60px;
+            }
+            .btn {
+                margin-top: 9px;
+            }
+        }
+    }
+}
+
+.background-wrapper {
+    background: #e7ecff;
+}
+
+.footer {
+    height: 13.5rem;
+    &__first-part {
+        padding-top: 4.25rem;
+        &::after {
+            content: '';
+            width: 100%;
+            height: 1px;
+            background: #cdd1d4;
+            margin-top: 47px;
+        }
+        .copyright {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            color: #939ea4;
+        }
+    }
+
+    &__second-part {
+        padding-top: 20px;
+        .nav-links {
+            .navlink__item {
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 24px;
+                color: #929ecc;
+            }
+            .navlink__item:hover,
+            .navlink__item:focus {
+                color: #111b47;
+                font-weight: 900;
+            }
+        }
+        .socials {
+            &__item {
+                &-icon {
+                    width: 16px;
+                    height: 16px;
+                    fill: #b0b8bc;
+                    transition: 0.5s;
+                }
+                .facebook:hover {
+                    fill: #1778f2;
+                }
+                .linkedin:hover {
+                    fill: #0077b5;
+                }
+                .twitter:hover {
+                    fill: #55acee;
+                }
+                .youtube:hover {
+                    fill: #e82a1c;
+                }
+                .instagram:hover {
+                    fill: #f58529;
+                }
+            }
+        }
+    }
 }
