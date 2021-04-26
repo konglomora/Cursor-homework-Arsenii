@@ -1,13 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="./dist/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello world</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+            integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="./dist/styles.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HW #11 Arsenii Netrebenko</title>
+    </head>
+    <body>
+        <div class="container content-wrapper">
+            <nav class="navbar navbar-light">
+                <div class="col d-flex justify-content-between nav-links">
+                    <a href="#" class="navlink__item">Home</a>
+                    <a href="#" class="navlink__item">About</a>
+                    <a href="#" class="navlink__item">Contact</a>
+                </div>
+                <a class="d-flex col-md-7 justify-content-center main-text-logo">Landie</a>
+                <button type="button" class="btn btn-dark button__black col">Buy Now</button>
+            </nav>
+
+            <section class="section-first">
+                <div class="text">
+                    <div class="d-md-flex col-md-6 bd-highlight text__title-fs">
+                        Introduce Your Product Quickly & Effectively
+                    </div>
+                    <div class="d-md-flex col-md-6 bd-highlight text__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        <br />
+                        <br />
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim.
+                    </div>
+                </div>
+                <div class="col-md-5 d-flex justify-content-between buttons">
+                    <button type="button" class="col-5 btn btn-dark button__black">Purchase UI Kit</button>
+                    <button type="button" class="col-5 btn btn-dark button__transparent">Learn More</button>
+                </div>
+            </section>
+
+            <section class="row section-second">
+                <div class="col-md-6 text">
+                    <div class="col-md-12 d-md-flex bd-highlight text__title">Light, Fast & Powerful</div>
+                    <div class="col-md-12 d-md-flex text__description">
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                        Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                        <br />
+                        <br />
+                        mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa
+                        quis enim.
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 text small-text">
+                            <div class="col-md-1">
+                                <svg class="small-title-icon">
+                                    <use xlink:href="img/sprite.svg#small-title-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-12 d-md-flex text__title">Title Goes Here</div>
+                            <div class="col-md-12 d-md-flex text__description">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                            </div>
+                        </div>
+                        <div class="col-md-6 text small-text">
+                            <div class="col-md-1">
+                                <svg class="small-title-icon">
+                                    <use xlink:href="img/sprite.svg#small-title-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="col-md-12 d-md-flex text__title">Title Goes Here</div>
+                            <div class="col-md-12 d-md-flex text__description">
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget
+                                dolor.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <svg class="login">
+                        <use xlink:href="img/sprite.svg#Login"></use>
+                    </svg>
+                </div>
+            </section>
+
+            <section class="section-third d-flex flex-column justify-content-around">
+                <div class="row flower__container">
+                    <div class="col-md-6">
+                        <svg class="flower">
+                            <use xlink:href="img/sprite.svg#flower"></use>
+                        </svg>
+                    </div>
+                    <div class="col-md-5 text">
+                        <div class="col-md-12 d-md-flex text__title">Light, Fast & Powerful</div>
+                        <div class="col-md-12 d-md-flex text__description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            <br />
+                            <br />
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa quis enim.
+                        </div>
+                    </div>
+                </div>
+                <div class="row flamingo__container">
+                    <div class="col-md-6">
+                        <svg class="flamingo">
+                            <use xlink:href="img/sprite.svg#flamingo"></use>
+                        </svg>
+                    </div>
+                    <div class="col-md-5 text">
+                        <div class="col-md-12 d-md-flex text__title">Light, Fast & Powerful</div>
+                        <div class="col-md-12 d-md-flex text__description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            <br />
+                            <br />
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa quis enim.
+                        </div>
+                    </div>
+                </div>
+                <div class="row e-dog__container">
+                    <div class="col-md-6">
+                        <svg class="e-dog">
+                            <use xlink:href="img/sprite.svg#e-dog"></use>
+                        </svg>
+                    </div>
+                    <div class="col-md-5 text">
+                        <div class="col-md-12 d-md-flex text__title">Light, Fast & Powerful</div>
+                        <div class="col-md-12 d-md-flex text__description">
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus
+                            <br />
+                            <br />
+                            mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat
+                            massa quis enim.
+                        </div>
+                        <div class="col-md-11">
+                            <button type="button" class="col-5 btn btn-dark button__black">Purchase UI Kit</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section class="section-fourth container-fluid">
+            <div class="row d-flex flex-column justify-content-center align-items-center subscription-block">
+                <div class="text__title">A Price To Suit Everyone</div>
+                <div class="col-md-5 text__description">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus
+                </div>
+                <div class="price__title">$40</div>
+                <div class="price__description">UI Design Kit</div>
+                <div class="price__sub-heading">See, One price. Simple.</div>
+                <button type="button" class="col-md-2 btn btn-dark button__black">Purchase Now</button>
+            </div>
+        </section>
+
+        <div class="container-fluid background-wrapper">
+            <footer class="footer container content-wrapper">
+                <div class="row footer__first-part">
+                    <div class="col-md-2 copyright">©2020 Yourcompany</div>
+                    <a class="d-flex col-md justify-content-center main-text-logo">Landie</a>
+                    <button type="button" class="col-md-2 btn btn-dark button__black">Purchase Now</button>
+                </div>
+                <div class="row d-flex justify-content-between footer__second-part">
+                    <div class="col-md-3 d-flex justify-content-between nav-links">
+                        <a href="#" class="navlink__item">Home</a>
+                        <a href="#" class="navlink__item">About</a>
+                        <a href="#" class="navlink__item">Contact</a>
+                    </div>
+                    <div class="col-md-3 d-flex justify-content-between socials">
+                        <a href="#" class="socials__item">
+                            <svg class="socials__item-icon facebook">
+                                <use xlink:href="img/sprite.svg#facebook"></use>
+                            </svg> </a
+                        ><a href="#" class="socials__item">
+                            <svg class="socials__item-icon linkedin">
+                                <use xlink:href="img/sprite.svg#linkedin"></use>
+                            </svg> </a
+                        ><a href="#" class="socials__item">
+                            <svg class="socials__item-icon twitter">
+                                <use xlink:href="img/sprite.svg#twitter"></use>
+                            </svg> </a
+                        ><a href="#" class="socials__item">
+                            <svg class="socials__item-icon youtube">
+                                <use xlink:href="img/sprite.svg#youtube"></use>
+                            </svg> </a
+                        ><a href="#" class="socials__item">
+                            <svg class="socials__item-icon instagram">
+                                <use xlink:href="img/sprite.svg#Instagram"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
 </html>
