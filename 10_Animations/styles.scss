@@ -105,11 +105,9 @@ body {
     transform: rotate(45deg) translate(2.5em, 2em);
 }
 
-
 .selected > .third-saber {
     transform: rotate(-45deg) translate(1em, -2em);
 }
-
 
 .selected:hover .second-saber::before {
     box-shadow: rgb(224, 0, 22) 0px -14px 128px 40px;
@@ -125,14 +123,13 @@ body {
 
 .pendulum__container {
     width: 100%;
-    background-color: aliceblue;
     height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .pendlum {
-    width: 15em;
+    width: 331px;
     height: 191px;
     display: flex;
     justify-content: space-around;
@@ -142,14 +139,55 @@ body {
             content: '';
             position: absolute;
             bottom: 0;
-            background-color: black;
             width: 3em;
             height: 3em;
             border-radius: 50%;
             left: -1.5em;
             display: inline-block;
-            border: 3px solid rgba(153, 149, 153, 0.531);
+            // border: 1px solid rgba(153, 149, 153, 0.531);
             box-shadow: 8px 43px 10px #80808021;
+        }
+        &:nth-child(1) {
+            &::after {
+                background: rgb(110, 0, 234);
+                background: linear-gradient(90deg, rgba(110, 0, 234, 1) 100%, rgba(168, 74, 245, 1) 100%);
+            }
+        }
+        &:nth-child(2) {
+            &::after {
+                background: rgb(168, 74, 245);
+                background: linear-gradient(90deg, rgba(168, 74, 245, 1) 0%, rgba(116, 10, 236, 1) 0%);
+            }
+        }
+        &:nth-child(3) {
+            &::after {
+                background: rgb(110, 0, 234);
+                background: linear-gradient(90deg, rgba(110, 0, 234, 1) 0%, rgba(168, 74, 245, 1) 100%);
+            }
+        }
+        &:nth-child(4) {
+            &::after {
+                background: rgb(151, 63, 251);
+                background: linear-gradient(90deg, rgba(151, 63, 251, 1) 0%, rgba(191, 125, 245, 1) 98%);
+            }
+        }
+        &:nth-child(5) {
+            &::after {
+                background: rgb(151, 63, 251);
+                background: linear-gradient(90deg, rgba(151, 63, 251, 1) 0%, rgba(204, 120, 86, 1) 40%);
+            }
+        }
+        &:nth-child(6) {
+            &::after {
+                background: rgb(204, 106, 86);
+                background: linear-gradient(90deg, rgba(204, 106, 86, 1) 15%, rgba(251, 63, 63, 1) 80%);
+            }
+        }
+        &:nth-child(7) {
+            &::after {
+                background: rgb(141, 86, 204);
+                background: linear-gradient(90deg, rgba(141, 86, 204, 1) 0%, rgba(251, 85, 63, 1) 0%);
+            }
         }
         &:last-child {
             animation: moving 0.8s cubic-bezier(0.215, 0.61, 0.355, 1) infinite alternate;
