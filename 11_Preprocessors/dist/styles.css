@@ -214,8 +214,9 @@ body {
   color: #5d6970;
   margin-top: 60px;
 }
-.section-fourth .subscription-block .price .btn {
+.section-fourth .subscription-block .button__black {
   margin-top: 9px;
+  padding: 2px 30px;
 }
 
 .background-wrapper {
